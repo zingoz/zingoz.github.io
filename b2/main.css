@@ -34,8 +34,6 @@ div h3 {
   margin-top: 5px;
   background-color: #666;
   text-align: center;
-  -webkit-box-shadow: inset 1px 1px 8px 1px rgba(191,189,191,1);
-  -moz-box-shadow: inset 1px 1px 8px 1px rgba(191,189,191,1);
   box-shadow: inset 1px 1px 8px 1px rgba(191,189,191,1);
   border-radius: 5px;
 }
@@ -61,6 +59,8 @@ header[role="banner"] {
   background-repeat: no-repeat;
   background-size:contain;
   margin-bottom: 20px;
+  text-indent: -400px;
+  overflow: hidden;
 }
 .summary, .preamble {
   width: 550px;
@@ -107,13 +107,6 @@ a:hover, a:focus {
   text-decoration: underline;
 }
 
-.wrapper {
-  -webkit-box-shadow: 1px 1px 11px 11px rgba(153,153,153,0.57);
-  -moz-box-shadow: 1px 1px 11px 11px rgba(153,153,153,0.57);
-  box-shadow: 1px 1px 11px 11px rgba(153,153,153,0.57);
-  padding: 10px;
-}
-
 ul {
     list-style-image: url("../img/orange_star.png");
 }
@@ -134,30 +127,43 @@ li:hover, li:focus {
   list-style-image: url("../img/red_star.png");
 }
 
-aside {
+
+.design-selection {
+  box-shadow: 1px 1px 11px 11px rgba(153,153,153,0.57);
+}
+
+.design-selection{
   position: absolute;
   font-size: 0.9em;
   width: 300px;
-  height: 900px;
-  top: 581px;
+  height: 600px;
+  top: 586px;
   left: 65%;
   margin-left: 1100;
   padding: 0px;
+  border-radius: 5px;
 }
-
-aside h3 {
+.zen-resources{
+    position: absolute;
+    font-size: 0.9em;
+    width: 300px;
+    height: 300px;
+    top: 996px;
+    left: 65%;
+    margin-left: 1100;
+    padding: 0px;
+}
+.design-selection h3, .zen-resources h3{
   border-radius: 5px;
   text-align: center;
   margin: 0px;
   padding: 0px;
   color: #DDD;
   background-color: #666;
-  -webkit-box-shadow: inset 1px 1px 8px 1px rgba(191,189,191,1);
-  -moz-box-shadow: inset 1px 1px 8px 1px rgba(191,189,191,1);
   box-shadow: inset 1px 1px 8px 1px rgba(191,189,191,1);
 }
 
-.design-selection, .design-archives, .zen-resources {
+.design-selection, .zen-resources {
   margin-bottom: 5px;
 }
 
@@ -170,14 +176,72 @@ footer a:last-child {
   padding-right: 3px;
 }
 
-.extra1{
-	position:fixed;
-  width: 230px;
+.design-archives{
+  position: absolute;
+  top: 0px;
+  left: 35%;
+  margin-left: 335px;
+  width: 250px;
+  height: 50px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.design-archives h3 {
+  background:url(../img/sidething.png) no-repeat;
+  text-indent: -200px;
+  overflow: hidden;
+}
+
+.design-archives ul {
+  margin: 0px;;
+  padding: 0px;
+}
+
+.design-archives li {
+  position: absolute;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  overflow: hidden;
+}
+.design-archives li a {
+  color: black;
+}
+
+.design-archives .next {
+  width: 114px;
   height: 25px;
-	top:0;
-  left:50%;
-  margin-left:-700px;
-	background:url(../img/sidething.png) no-repeat;
-  border-bottom: 2px solid #000044;
-  padding-bottom: 10px;
+  top:27px;
+  border: 2px solid #000044;
+  z-index: 2;
+  text-indent: 100px;
+  margin-left: 15px;
+  overflow: hidden;
+}
+.next a{
+  background:url(../img/next.png) no-repeat;
+}
+.next:hover {
+border-color: #000088;
+z-index: 3;
+}
+
+.design-archives .viewall {
+  width: 114px;
+  height: 25px;
+  top:27px;
+  left: 116px;
+  border: 2px solid #440000;
+  z-index: 2;
+  text-indent: 100px;
+  margin-left: 15px;
+  overflow: hidden;
+}
+.viewall a{
+  background:url(../img/all.png) no-repeat;
+}
+.viewall:hover {
+border-color: #880000;
+z-index: 3;
 }
