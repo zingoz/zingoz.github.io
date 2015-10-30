@@ -13,7 +13,7 @@ body {
   margin: auto;
   position: relative;
   width: 900px;
-  height: 2360px;
+  height: 2730px;
   font: 110% georgia, sans-serif;
   color: #CFCFCF;
   background-color: #080808;
@@ -25,11 +25,14 @@ div h3 {
   color: #EEE;
   margin-top: 4px;
   margin-left: 25px;
+  font-family: "Verdana", Sans-serif;
+  font-variant: small-caps;
 }
 
 div[role="article"]{
   border-color: #b1690d;
   color: #666;
+  font-family: "Verdana", Sans-serif;
 }
 
 div[role="article"]:hover, div[role="article"]:focus {
@@ -51,7 +54,7 @@ header[role="banner"] {
   padding-left: 5px;
   border-left-style: solid;
   border-left-style:dotted;
-  border-width: -10px 0px -10px 2px;
+  border-width: 0px 0px 0px 2px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
 }
@@ -65,15 +68,12 @@ header[role="banner"] {
   padding-left: 5px;
   border-left-style: solid;
   border-left-style:dotted;
-  border-width: -10px 0px -10px 2px;
+  border-width: 0px 0px 0px 2px;
   border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
 }
 
 a {
   color: #b1690d;
-  -webkit-transition: all 0.25s ease-out;
-  -moz-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
   text-decoration: none;
 }
@@ -89,8 +89,11 @@ ul {
     list-style-image: url("../img/orange_star.png");
 }
 li {
+  padding-top: 5px;
+  padding-bottom: 5px;
   padding-left: 4px;
 }
+/*
 li:nth-child(even) {
   background-color: #222222;
 }
@@ -98,7 +101,7 @@ li:nth-child(even) {
 li:nth-child(odd) {
   background-color: #111111;
 }
-
+*/
 li:hover, li:focus {
   border-left: 5px solid #555555;
   list-style-image: url("../img/red_star.png");
@@ -123,10 +126,21 @@ aside h3 {
 }
 
 .design-selection, .design-archives, .zen-resources {
-  border-style: solid;
-  border-radius: 15px;
-  border-color: black;
-  border-width: 1px;
   margin-bottom: 5px;
-  font-size: 95%;
 }
+footer a {
+  border-left: 1px dotted white;
+  padding-left: 3px;
+}
+footer a:last-child {
+  border-right: 1px dotted white;
+  padding-right: 3px;
+}
+
+/*.extra1 {
+  position: absolute;
+  bottom: 0px;
+  height: 50px;
+  width: 1200px;
+  background-color: white;
+}*/
