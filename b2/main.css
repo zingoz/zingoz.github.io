@@ -13,11 +13,11 @@ body {
   margin: auto;
   position: relative;
   width: 900px;
-  height: 2775px;
+  height: 2950px;
   font: 110% georgia, sans-serif;
-  color: #CFCFCF;
+  color: color: rgba(0, 0, 0, 0);
   background-color: #080808;
-  border-left: 2px solid #250000;
+  border-left: 2px solid #000044;
   padding-left: 20px;
   border-right: 2px solid #250000;
   padding-right: 20px;
@@ -50,14 +50,17 @@ div[role="article"]:hover, div[role="article"]:focus {
   border-color: #e27705;
   color: #EEE;
 }
+.intro {
+
+}
+
 header[role="banner"] {
   width: 900px;
-  height: 400px;
-  background-color: #222222;
-  text-indent: 50px;
-  background-position: bottom;
-  overflow:auto;
-  background:url(../img/sun.png) bottom right no-repeat;
+  height: 563px;
+  background-image: url(../img/fireice.png);
+  background-repeat: no-repeat;
+  background-size:contain;
+  margin-bottom: 20px;
 }
 .summary, .preamble {
   width: 550px;
@@ -70,6 +73,9 @@ header[role="banner"] {
 }
 #zen-summary {
   padding-top: 45px;
+
+
+
   background-image: url("../img/beauty.png");
   background-repeat: no-repeat;
   background-position: 30px 5px;
@@ -133,7 +139,7 @@ aside {
   font-size: 0.9em;
   width: 300px;
   height: 900px;
-  top: 398px;
+  top: 581px;
   left: 65%;
   margin-left: 1100;
   padding: 0px;
@@ -172,6 +178,6 @@ footer a:last-child {
   left:50%;
   margin-left:-700px;
 	background:url(../img/sidething.png) no-repeat;
-  border-bottom: 2px solid #250000;
+  border-bottom: 2px solid #000044;
   padding-bottom: 10px;
 }
