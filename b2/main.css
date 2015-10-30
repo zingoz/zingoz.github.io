@@ -15,7 +15,6 @@ body {
   width: 900px;
   height: 2950px;
   font: 110% georgia, sans-serif;
-  color: color: rgba(0, 0, 0, 0);
   background-color: #080808;
   border-left: 2px solid #000044;
   padding-left: 20px;
@@ -139,7 +138,6 @@ li:hover, li:focus {
   height: 600px;
   top: 586px;
   left: 65%;
-  margin-left: 1100;
   padding: 0px;
   border-radius: 5px;
 }
@@ -150,7 +148,6 @@ li:hover, li:focus {
     height: 300px;
     top: 996px;
     left: 65%;
-    margin-left: 1100;
     padding: 0px;
 }
 .design-selection h3, .zen-resources h3{
