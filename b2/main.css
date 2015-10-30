@@ -13,13 +13,14 @@ body {
   margin: auto;
   position: relative;
   width: 900px;
-  height: 2730px;
+  height: 2775px;
   font: 110% georgia, sans-serif;
   color: #CFCFCF;
   background-color: #080808;
-}
-#zen-summary{
-  padding-top: 10px;
+  border-left: 2px solid #250000;
+  padding-left: 20px;
+  border-right: 2px solid #250000;
+  padding-right: 20px;
 }
 div h3 {
   color: #EEE;
@@ -29,7 +30,7 @@ div h3 {
   font-variant: small-caps;
 }
 
-#zen-supporting h3, .preamble h3 {
+#zen-supporting h3, .preamble h3{
   margin-top: 5px;
   background-color: #666;
   text-align: center;
@@ -59,15 +60,19 @@ header[role="banner"] {
   background:url(../img/sun.png) bottom right no-repeat;
 }
 .summary, .preamble {
-  margin-bottom: 5px;
   width: 550px;
   float: left;
   padding-left: 5px;
-  border-left-style: solid;
+  margin-bottom: 10px;
   border-left-style:dotted;
   border-width: 0px 0px 0px 2px;
   border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
+}
+#zen-summary {
+  padding-top: 45px;
+  background-image: url("../img/beauty.png");
+  background-repeat: no-repeat;
+  background-position: 30px 5px;
 }
 
 .supporting {
@@ -124,10 +129,13 @@ li:hover, li:focus {
 }
 
 aside {
-  float:right;
+  position: absolute;
   font-size: 0.9em;
   width: 300px;
-  margin-top: -400px;
+  height: 900px;
+  top: 398px;
+  left: 65%;
+  margin-left: 1100;
   padding: 0px;
 }
 
@@ -156,10 +164,14 @@ footer a:last-child {
   padding-right: 3px;
 }
 
-/*.extra1 {
-  position: absolute;
-  bottom: 0px;
-  height: 50px;
-  width: 1200px;
-  background-color: white;
-}*/
+.extra1{
+	position:fixed;
+  width: 230px;
+  height: 25px;
+	top:0;
+  left:50%;
+  margin-left:-700px;
+	background:url(../img/sidething.png) no-repeat;
+  border-bottom: 2px solid #250000;
+  padding-bottom: 10px;
+}
