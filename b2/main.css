@@ -29,6 +29,16 @@ div h3 {
   font-variant: small-caps;
 }
 
+#zen-supporting h3, .preamble h3 {
+  margin-top: 5px;
+  background-color: #666;
+  text-align: center;
+  -webkit-box-shadow: inset 1px 1px 8px 1px rgba(191,189,191,1);
+  -moz-box-shadow: inset 1px 1px 8px 1px rgba(191,189,191,1);
+  box-shadow: inset 1px 1px 8px 1px rgba(191,189,191,1);
+  border-radius: 5px;
+}
+
 div[role="article"]{
   border-color: #b1690d;
   color: #666;
@@ -45,6 +55,7 @@ header[role="banner"] {
   background-color: #222222;
   text-indent: 50px;
   background-position: bottom;
+  overflow:auto;
   background:url(../img/sun.png) bottom right no-repeat;
 }
 .summary, .preamble {
@@ -85,6 +96,13 @@ a:hover, a:focus {
   text-decoration: underline;
 }
 
+.wrapper {
+  -webkit-box-shadow: 1px 1px 11px 11px rgba(153,153,153,0.57);
+  -moz-box-shadow: 1px 1px 11px 11px rgba(153,153,153,0.57);
+  box-shadow: 1px 1px 11px 11px rgba(153,153,153,0.57);
+  padding: 10px;
+}
+
 ul {
     list-style-image: url("../img/orange_star.png");
 }
@@ -92,42 +110,43 @@ li {
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 4px;
+  color: #666;
 }
-/*
-li:nth-child(even) {
-  background-color: #222222;
+li a:first-child {
+  display:block;
+}
+.design-selection a:last-child {
+  color: white;
 }
 
-li:nth-child(odd) {
-  background-color: #111111;
-}
-*/
 li:hover, li:focus {
-  border-left: 5px solid #555555;
   list-style-image: url("../img/red_star.png");
 }
 
 aside {
   float:right;
   font-size: 0.9em;
-  width: 340px;
+  width: 300px;
   margin-top: -400px;
   padding: 0px;
 }
 
 aside h3 {
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  border-radius: 5px;
   text-align: center;
   margin: 0px;
   padding: 0px;
   color: #DDD;
-  background-color: blue;
+  background-color: #666;
+  -webkit-box-shadow: inset 1px 1px 8px 1px rgba(191,189,191,1);
+  -moz-box-shadow: inset 1px 1px 8px 1px rgba(191,189,191,1);
+  box-shadow: inset 1px 1px 8px 1px rgba(191,189,191,1);
 }
 
 .design-selection, .design-archives, .zen-resources {
   margin-bottom: 5px;
 }
+
 footer a {
   border-left: 1px dotted white;
   padding-left: 3px;
