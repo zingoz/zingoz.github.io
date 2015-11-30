@@ -54,7 +54,6 @@ h1 {
 
 h2 {
   font-size: 0.75em;
-  margin: -5px 0 0;
   font-weight: normal;
 }
 
@@ -203,7 +202,7 @@ nav {
 }
 
 /* logo text */
-h1, h2 {
+#logo h1,#logo h2 {
   color: #fff;
 }
 
@@ -222,10 +221,29 @@ nav a.selected, nav a:hover {
   color: #32673f;
 }
 
-.skiss {
+/**********************************
+Added stuff
+***********************************/
+
+.b2div , .b3div {
+  display: none;
   border-top: 2px dotted black;
 }
 
 .upg_b2 p {
   border-top: 2px dotted black;
+}
+
+p {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: 1em;
+    margin-right: 0;
+}
+.pspace1 {
+  margin-top: 1em;
+}
+.pspace2 {
+  margin-top: 2em;
+  margin-left: 0em;
 }
