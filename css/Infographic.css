@@ -1,0 +1,48 @@
+/*
+  Menu
+*/
+#pokestage ul {
+  list-style-type: none;
+}
+
+
+/*
+#pokemenu ul li {
+    display: inline;
+}
+
+#pokemenu ul li a {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 32px;
+}
+
+#pokemenu ul li a:hover {
+  background-color: grey;
+}
+*/
+
+/*
+  Divs & borders
+*/
+
+#pokediv {
+  border: 2px solid black;
+  border-radius: 16px;
+}
+#pokeinfo {
+  border-top: 2px solid black;
+}
+#pokemenu {
+  border-bottom: 2px solid black;
+}
+
+/*
+ Pictures
+*/
+#pokepic img {
+  width: 250px;
+  height: 250px;
+}

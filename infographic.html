@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/Infographic.css">
+    <script src="javascript/jquery-2.1.4.js"></script>
+    <script src="javascript/main.js"></script>
+    <title>Infographic</title>
+  </head>
+  <body>
+    <div id="alldivs">
+      <h1 id="titleheader">Starting pokemon</h1>
+      <div id="pokediv">
+        <div id="pokemenu">
+
+          <input type="radio" name="type" id="radiograss" checked="checked" onclick="changeimg()" value="g">>Grass
+          <input type="radio" name="type" id="radiowater" onclick="changeimg()" value="w">>Water
+          <input type="radio" name="type" id="radiofire" onclick="changeimg()" value="f">>Fire
+
+        </div>
+        <div id="pokestage">
+          <ul>
+            <li>
+              <input type="radio" name="stage" id="radiofirst" checked="checked" onclick="changeimg()" value="2">First Stage
+              <ul>
+                <li>
+                  <input type="radio" name="stage" id="radiosecond" onclick="changeimg()" value="2">>Second Stage
+                  <ul>
+                    <li>
+                      <input type="radio" name="stage" id="radiothird" onclick="changeimg()" value="3">>Third Stage
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div id="pokepic">
+          <img src="img/grass_one.png" id="pokeimage">
+        </div>
+        <div id="pokeinfo">
+          <p>En gräs typ som ser ut som en växt</p>
+          <p>Stark mot vatten pokemons</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
