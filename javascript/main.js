@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  changeimg();
   $(".b2button").click(function(){
     $(".b2div").toggle();
     $(".b3div").hide();

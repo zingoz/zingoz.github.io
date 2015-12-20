@@ -5,19 +5,64 @@
   list-style-type: none;
 }
 
+input[name="type"] {
+    display:none;
+}
+
+input[name="type"] + label {
+    margin:-2px;
+    padding: 8px 25px;
+}
+
+#radiograss + label{
+    background-color: #696;
+}
+#radiograss:checked + label{
+    background-color: #4c4;
+    padding: 8px 29px;
+}
+#radiowater + label{
+    background-color: #669;
+}
+#radiowater:checked + label{
+    background-color: #44c;
+    padding: 8px 29px;
+}
+#radiofire + label{
+    background-color: #966;
+}
+#radiofire:checked + label{
+    background-color: #c22;
+    padding: 8px 29px;
+}
+
 /*
   Divs & borders
 */
 
 #pokediv {
   border: 2px solid black;
-  border-radius: 16px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
 }
 #pokeinfo {
   border-top: 2px solid black;
 }
-#pokemenu {
-  border-bottom: 2px solid black;
+#radiograss +label {
+  float: left;
+  margin: 0px;
+}
+#radiowater+label{
+  float: left;
+  margin: 0px;
+}
+#radiofire+label{
+  float: left;
+  margin: 0px;
+}
+#pokediv, #alldivs{
+  width: 260px;
+  margin: auto;
 }
 
 /*
