@@ -1,1 +1,4 @@
-grass three
+Venusaurr:
+<p>Third stage</p>
+<p>Grass type</p>
+<p>Strong against Water</p>

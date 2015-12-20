@@ -1,1 +1,4 @@
-grass two
+Ivysaur:
+<p>Second stage</p>
+<p>Grass type</p>
+<p>Strong against Water</p>

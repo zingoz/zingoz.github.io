@@ -225,7 +225,7 @@ nav a.selected, nav a:hover {
 Added stuff
 ***********************************/
 
-.b2div , .b3div {
+.b2div , .b3div , .b5div {
   display: none;
   border-top: 2px dotted black;
 }

@@ -1,1 +1,4 @@
-grass one
+Bulbasaur:
+<p>First stage</p>
+<p>Grass type</p>
+<p>Strong against Water</p>

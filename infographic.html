@@ -4,34 +4,33 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/Infographic.css">
     <script src="javascript/jquery-2.1.4.js"></script>
-    <script src="javascript/main.js"></script>
+    <script src="javascript/infographic.js"></script>
     <title>Infographic</title>
   </head>
   <body>
     <div id="alldivs">
-      <h1 id="titleheader">Starting pokemon</h1>
+      <div id="titlediv">
+        <img id="pokeballimage" src="img/pokeball.png">
+        <h2 id="titleheader">Starting pokemon</h2>
+      </div>
       <div id="pokediv">
         <div id="pokemenu">
 
-          <input type="radio" name="type" id="radiograss" checked="checked" onclick="changeimg()"><label for="radiograss">Grass</label>
-          <input type="radio" name="type" id="radiowater" onclick="changeimg()"><label for="radiowater">Water</label>
-          <input type="radio" name="type" id="radiofire" onclick="changeimg()"><label for="radiofire">Fire</label>
+          <input type="radio" name="type" id="radiograss" checked="checked" onclick="changeimg()"><label id="labelgrass" for="radiograss">Grass</label>
+          <input type="radio" name="type" id="radiowater" onclick="changeimg()"><label id="labelwater" for="radiowater">Water</label>
+          <input type="radio" name="type" id="radiofire" onclick="changeimg()"><label id="labelfire" for="radiofire">Fire</label>
 
         </div>
         <div id="pokestage">
           <ul>
             <li>
-              <input type="radio" name="stage" id="radiofirst" checked="checked" onclick="changeimg()">First Stage
-              <ul>
-                <li>
-                  <input type="radio" name="stage" id="radiosecond" onclick="changeimg()">Second Stage
-                  <ul>
-                    <li>
-                      <input type="radio" name="stage" id="radiothird" onclick="changeimg()">Third Stage
-                    </li>
-                  </ul>
-                </li>
-              </ul>
+              <input type="radio" name="stage" id="radiofirst" checked="checked" onclick="changeimg()"><label id="labelfirst" for="radiofirst">First Stage</label>
+            </li>
+            <li>
+              <input type="radio" name="stage" id="radiosecond" onclick="changeimg()"><label id="labelsecond" for="radiosecond">Second Stage</label>
+            </li>
+            <li>
+              <input type="radio" name="stage" id="radiothird" onclick="changeimg()"><label id="labelthird" for="radiothird">Third Stage</label>
             </li>
           </ul>
         </div>
@@ -43,6 +42,7 @@
           <p>Stark mot vatten pokemons</p>
         </div>
       </div>
+      <p><a href="index.html"> Första sidan </a></p>
     </div>
   </body>
 </html>

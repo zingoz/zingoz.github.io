@@ -1,1 +1,4 @@
-fire two
+Charmeleon:
+<p>Second stage</p>
+<p>Fire type</p>
+<p>Strong against Grass</p>

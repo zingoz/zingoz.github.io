@@ -1,1 +1,4 @@
-Fire three
+Charizard:
+<p>Third stage</p>
+<p>Fire type</p>
+<p>Strong against Grass</p>

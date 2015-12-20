@@ -1,1 +1,4 @@
-Fire one
+Charmander:
+<p>First stage</p>
+<p>Fire type</p>
+<p>Strong against Grass</p>

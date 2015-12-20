@@ -1,14 +1,23 @@
 /*
   Menu
 */
+
+#radiofirst:checked +label{
+  background-color: #ccc;
+}
+#radiosecond:checked +label{
+  background-color: #ccc;
+}
+#radiothird:checked +label{
+  background-color: #ccc;
+}
+
 #pokestage ul {
   list-style-type: none;
 }
-
-input[name="type"] {
+input[name="type"], input[name="stage"] {
     display:none;
 }
-
 input[name="type"] + label {
     margin:-2px;
     padding: 8px 25px;
@@ -64,10 +73,35 @@ input[name="type"] + label {
   width: 260px;
   margin: auto;
 }
+#pokeinfo{
+  font-weight: bold;
+}
+#pokeinfo p {
+  font-weight: normal;
+  padding: 5px;
+  margin: 0px;
+}
+/*
+  Font
+*/
+
+#pokestage {
+  font-size: 13px;
+  font-weight: bold;
+}
+#titleheader {
+  position: relative;
+}
 
 /*
  Pictures
 */
+
+#pokeballimage {
+  float: left;
+  width: 20px;
+  height: 20px;
+}
 #pokepic img {
   width: 250px;
   height: 250px;

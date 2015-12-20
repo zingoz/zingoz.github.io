@@ -1,1 +1,4 @@
-water three
+Blastoise:
+<p>Third stage</p>
+<p>Water type</p>
+<p>Strong against Fire</p>
