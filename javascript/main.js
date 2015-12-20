@@ -12,13 +12,13 @@ $(document).ready(function(){
 function stage(type){
     var image = document.getElementById('pokeimage');
   if (document.getElementById("radiofirst").checked==true) {
-    image.src = "img/" + type + "one.png";
+    image.src = "img/" + type + "_one.png";
   }
   else if (document.getElementById("radiosecond").checked==true) {
-    image.src = "img/" + type + "two.png";
+    image.src = "img/" + type + "_two.png";
   }
   else if (document.getElementById("radiothird").checked==true) {
-    image.src = "img/" + type + "three.png";
+    image.src = "img/" + type + "_three.png";
   }
 }
 
