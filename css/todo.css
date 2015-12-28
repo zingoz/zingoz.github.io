@@ -1,0 +1,17 @@
+#alldivs {
+  margin: auto;
+  text-align: center;
+}
+#topnew {
+  background-color: #999
+}
+#middletodo {
+  background-color: #777
+}
+#bottomdone {
+  background-color: #555
+}
+h2 {
+  padding: 0px;
+  margin: 5px 0px 15px 0px;
+}
