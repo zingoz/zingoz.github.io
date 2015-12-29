@@ -19,7 +19,25 @@ function NewClick(){
     }
   }
 }
+$(document).keypress(function (e) {
+    if ((e.which == 13 || e.keyCode == 13) && document.activeElement.className == "DivTextName") {
+      if (AllowedText(document.activeElement.value)) {
+        document.activeElement.blur();
+      }
+      else {
+        document.activeElement.value = OldText;
+        document.activeElement.blur();
+      }
+    }
+});
 
+function NewIsItEnter(TheKey){
+  if (TheKey.which == 13 || TheKey.keyCode == 13) {
+      NewClick();
+      return false;
+    }
+  return true;
+}
 function AllowedText(Text){
   if (Text != "" && Text.length > 0) {
     return true;
@@ -36,9 +54,8 @@ function NewItem(TheText){
   DivText.setAttribute("type","text");
   DivText.value = TheText;
   DivText.disabled = true;
-  //DivText.setAttribute("focusout",LoseFocus);
   DivText.className = "DivTextName";
-  NewLine.className = "TheP"; //color
+  NewLine.className = "TheP";
   NewDiv.className = "TheDiv";
   NewLine.appendChild(DivText);
   NewLine.appendChild(StandardItems("Klar"));
@@ -81,10 +98,18 @@ function Divcolors(ChosenDiv){
     if (i% 2 == 0) {
       Divs[i].style.backgroundColor = "#AAA";
       Divs[i].firstElementChild.firstElementChild.style.backgroundColor = "#AAA";
+      Divs[i].firstElementChild.firstElementChild.style.borderBottom="2px solid #AAA";
+      if (Divs[i].firstElementChild.firstElementChild == document.activeElement) {
+        Divs[i].firstElementChild.firstElementChild.style.borderBottom ="2px solid #333";
+      }
     }
     else {
       Divs[i].style.backgroundColor = "#DDD";
       Divs[i].firstElementChild.firstElementChild.style.backgroundColor = "#DDD";
+      Divs[i].firstElementChild.firstElementChild.style.borderBottom="2px solid #DDD";
+      if (Divs[i].firstElementChild.firstElementChild == document.activeElement) {
+        Divs[i].firstElementChild.firstElementChild.style.borderBottom="2px solid #333";
+      }
     }
   }
 }
@@ -106,7 +131,9 @@ function Changefunc(Objbut){
   OldText = Objbut.parentNode.firstElementChild.value;
   Objbut.parentNode.firstElementChild.disabled = false;
   Objbut.parentNode.firstElementChild.focus();
+  Objbut.parentNode.firstElementChild.select();
   Objbut.parentNode.firstElementChild.addEventListener("focusout", LoseFocus);
+  Objbut.parentNode.firstElementChild.addEventListener("blur", LoseFocus);
 }
 function LoseFocus(){;
   if (AllowedText(this.value)) {
@@ -116,5 +143,5 @@ function LoseFocus(){;
     this.value = OldText;
     this.disabled = true;
   }
-
+  Divcolorloop();
 }
