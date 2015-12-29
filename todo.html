@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Bootstrap 101 Template</title>
+    <title>To Do C_1</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/todo.css" rel="stylesheet">
@@ -14,9 +14,11 @@
   <body>
     <div id="alldivs">
       <div id="topnew" class="col-sm-12">
-        <h2>Nya sysslor</h2>
-        <input type="text" name="name" id="TextArea" value="En syssla">
-        <input type="button" name="new" class ="TheButton" value="Ny syssla" onclick="NewClick()">
+        <h1>Nya sysslor</h1>
+        <input type="text" name="name" id="TextArea" value="En syssla" maxlength="30">
+        <p>
+          <input type="button" name="new" id="FirstNewButton" onclick="NewClick()"><label id="labelNew" for="FirstNewButton">Ny Syssla</label>
+        </p>
       </div>
       <div id="middletodo" class="col-sm-6">
         <h2>Att göra</h2>

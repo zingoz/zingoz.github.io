@@ -1,20 +1,21 @@
+var OldText ="";
 function NewClick(){
   var NewTodo = document.getElementById("TextArea").value;
   if (AllowedText(NewTodo)) {
     NewItem(NewTodo);
+    document.getElementById("TextArea").value = "";
+    document.getElementById("TextArea").focus();
     return;
   }
 }
 
-
 function AllowedText(Text){
-  if (Text != null && Text != "" && Text.length > 1) {
+  if (Text != "" && Text.length > 0) {
     return true;
   }
   alert("Du måste skriva in giltig text!");
   return false;
 }
-
 
 function NewItem(TheText){
   var NewDiv = document.createElement('div');
@@ -23,6 +24,7 @@ function NewItem(TheText){
   DivText.setAttribute("type","text");
   DivText.value = TheText;
   DivText.disabled = true;
+  //DivText.setAttribute("focusout",LoseFocus);
   DivText.className = "DivTextName";
   NewLine.className = "TheP"; //color
   NewDiv.className = "TheDiv";
@@ -90,11 +92,18 @@ function Donefunc(element){
   }
 }
 function Changefunc(Objbut){
-  var OldText = Objbut.parentNode.firstElementChild.value;
-  var NewText = prompt("What do you want to change?", Objbut.parentNode.firstElementChild.value);
-  if (AllowedText(NewText)) {
-    Objbut.parentNode.firstElementChild.value = NewText;
-    return;
+  OldText = Objbut.parentNode.firstElementChild.value;
+  Objbut.parentNode.firstElementChild.disabled = false;
+  Objbut.parentNode.firstElementChild.focus();
+  Objbut.parentNode.firstElementChild.addEventListener("focusout", LoseFocus);
+}
+function LoseFocus(){;
+  if (AllowedText(this.value)) {
+    this.disabled = true;
   }
-  Objbut.parentNode.firstElementChild.value = OldText;
+  else {
+    this.value = OldText;
+    this.disabled = true;
+  }
+
 }
