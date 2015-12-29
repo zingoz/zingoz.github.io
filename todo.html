@@ -15,29 +15,16 @@
     <div id="alldivs">
       <div id="topnew" class="col-sm-12">
         <h2>Nya sysslor</h2>
-        <input type="text" name="name" value="En syssla">
-        <input type="button" name="new" value="Ny syssla">
+        <input type="text" name="name" id="TextArea" value="En syssla">
+        <input type="button" name="new" class ="TheButton" value="Ny syssla" onclick="NewClick()">
       </div>
       <div id="middletodo" class="col-sm-6">
         <h2>Att göra</h2>
-        <p>
-          Städa
-          <input type="button" name="done" value="Klar">
-          <input type="button" name="change" value="Ändra">
-          <input type="button" name="remove" value="Ta bort">
-        </p>
       </div>
       <div id="bottomdone" class="col-sm-6">
         <h2>Färdigt</h2>
-        <p>
-          Duscha
-          <input type="button" name="change" value="Ändra">
-          <input type="button" name="remove" value="Ta bort">
-        </p>
       </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="infographic.js"></script>
+    <script src="javascript/todo.js"></script>
   </body>
 </html>

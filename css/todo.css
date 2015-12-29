@@ -1,17 +1,50 @@
+/*
+Färger & kanter
+*/
+#bottomdone .TheDiv, #middletodo .TheDiv {
+  border-left: 1px dotted #888;
+}
+input[type=text]{
+ border: none;
+}
+#topnew {
+  background-color: #999;
+}
+#middletodo h2 {
+  background-color: #777;
+}
+#bottomdone h2 {
+  background-color: #555;
+}
+
+/*
+Positionering
+*/
+
 #alldivs {
   margin: auto;
   text-align: center;
+  min-width: 340px;
 }
 #topnew {
-  background-color: #999
+  padding-bottom: 10px;
 }
-#middletodo {
-  background-color: #777
-}
-#bottomdone {
-  background-color: #555
+#middletodo, #bottomdone {
+  padding-bottom: 10px;
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  margin-top: -5px;
 }
 h2 {
+  padding: 5px;
+  margin: 0px 0px 0px 0px;
+}
+.TheButton {
   padding: 0px;
-  margin: 5px 0px 15px 0px;
+  margin-right: 4px;
+}
+.TheDiv .TheP {
+  margin: 0px;
+  padding: 3px 0px 3px 0px;
 }
