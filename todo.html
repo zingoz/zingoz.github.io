@@ -17,8 +17,9 @@
         <h1>Nya sysslor</h1>
         <input type="text" name="name" id="TextArea" value="En syssla" maxlength="30">
         <p>
-          <input type="button" name="new" id="FirstNewButton" onclick="NewClick()"><label id="labelNew" for="FirstNewButton">Ny Syssla</label>
+          <input type="button" name="new" id="FirstNewButton" value="empty" onclick="NewClick()"><label id="labelNew" for="FirstNewButton">Ny Syssla</label>
         </p>
+        <div id="divwarning">Du måste skriva in giltig text!</div>
       </div>
       <div id="middletodo" class="col-sm-6">
         <h2>Att göra</h2>
@@ -27,6 +28,7 @@
         <h2>Färdigt</h2>
       </div>
     </div>
+    <script src="javascript/jquery-2.1.4.js"></script>
     <script src="javascript/todo.js"></script>
   </body>
 </html>

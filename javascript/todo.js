@@ -1,4 +1,5 @@
 var OldText ="";
+var running = true;
 function NewClick(){
   var NewTodo = document.getElementById("TextArea").value;
   if (AllowedText(NewTodo)) {
@@ -7,14 +8,25 @@ function NewClick(){
     document.getElementById("TextArea").focus();
     return;
   }
+  else {
+    if (running) {
+      running=false;
+      $("#divwarning").animate({textIndent: "0%"});
+      setTimeout(function(){
+        $("#divwarning").animate({textIndent: "100%"});
+        running=true;
+      }, 2800);
+    }
+  }
 }
 
 function AllowedText(Text){
   if (Text != "" && Text.length > 0) {
     return true;
   }
-  alert("Du måste skriva in giltig text!");
-  return false;
+  else {
+    return false;
+  }
 }
 
 function NewItem(TheText){
@@ -76,7 +88,6 @@ function Divcolors(ChosenDiv){
     }
   }
 }
-
 function Removefunc(Object){
   var BeGone = Object.parentNode.parentNode;
   BeGone.parentNode.removeChild(BeGone);
