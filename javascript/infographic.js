@@ -3,7 +3,7 @@ $(document).ready(function(){
 });
 
 function stage(type){
-  var image = document.getElementById('pokeimage');
+  var image = document.getElementById("pokeimage");
 
   if (document.getElementById("radiofirst").checked==true) {
     image.src = "img/" + type + "_one.png";
