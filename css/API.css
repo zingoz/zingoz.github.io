@@ -9,19 +9,29 @@ html, body {
     padding: 0px;
     margin: 0px;
 }
+body {
+  background-color: #222;
+}
 #wrapper {
   min-height: 100%;
+  background-color: #333;
+  color: white;
+  border-left: 1px solid #666;
+  border-right: 1px solid #666;
 }
-
 #chosenchamp, #champtitle, #champroles {
   width: 100%;
 }
 p {
   min-width: 120px;
 }
+li:hover, li:focus {
+  background-color: #999;
+}
 #squareimg, #bigimg {
   vertical-align: top;
   display: none;
+  box-shadow: 0px 10px 18px 0px rgba(0,0,0,0.4);
 }
 #bigimg {
   padding: 0px;
@@ -34,10 +44,50 @@ p {
 }
 #testing, #testimage {
   padding: 0px;
+  margin: auto;
 }
-#ultest {
+#outeruldiv{
+  display: none;
+  box-shadow: 0px 10px 18px 0px rgba(0,0,0,0.4);
+  background-color: gray;
+  direction: rtl;
   min-width: 200px;
-   max-height:300px;
-   overflow-y:auto;
-   overflow-x:hidden;
+  max-height:300px;
+  overflow-y:auto;
+  overflow-x:hidden;
+}
+#inneruldiv {
+  direction: ltr;
+}
+#dropbutton {
+  min-width: 200px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+#dropbutton:hover, #dropbutton:focus {
+  background-color: #3e8e41;
+}
+#f2pstatus {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+#noidea {
+  position: relative;
+  background-color: #777;
+  width: 230px;
+  display: none;
+  border: 2px solid black;
+  top: -125px;
+  left: 120px;
+}
+#bottomname {
+  color: #555;
+  height: 30px;
+  bottom: 0px;
+  position: absolute;;
+  width: 100%;
+  text-align: center;
 }
