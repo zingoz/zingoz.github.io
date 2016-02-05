@@ -1,4 +1,28 @@
+/*Made by Ludvig Roxin*/
+.col-centered{
+    float: none;
+    margin: auto;
+    margin-top: 1%;
+}
 #testing{
   width: 300px;
   float:left;
+}
+#chosenchamp,champtitle, champroles {
+  width: 100%;
+}
+#squareimg, #bigimg {
+  vertical-align: top;
+  display: none;
+}
+#bigimg {
+  padding: 0px;
+  position: fixed;
+  top: 1%;
+  margin: auto;
+}
+#ultest {
+   max-height:300px;
+   overflow-y:auto;
+   overflow-x:hidden;
 }

@@ -1,3 +1,4 @@
+<!--Made my ludvig Roxin -->
 <!DOCTYPE html>
 <html>
   <head>
@@ -7,17 +8,21 @@
     <link href="css/API.css" rel="stylesheet">
   </head>
   <body>
-    <div id="testing" width = "500px">
-      <button type="button" id="btnload">Load</button>
-      <button type="button" id="btnwrite">Write</button>
-      <p id="chosenchamp"> The Champ </p>
-      <ul id="ultest">
-      </ul>
+    <div id="wrapper" class="col-xs-12 col-md-6 col-centered">
+      <div id="testing" class="col-xs-6">
+        <button type="button" id="btnload">Load</button>
+        <button type="button" id="btnwrite">Write</button>
+        <p id="chosenchamp">The Champ</p>
+        <p id="champtitle">Title</p>
+        <p id="champroles">Role(s)</p>
+        <ul id="ultest">
+        </ul>
+      </div>
+      <div id="testimage" class="col-xs-6">
+        <img id="squareimg" src="" alt="">
+        <img id="bigimg" src="" alt="championsplashart" onclick="this.style.display='none'">
+      </div>
     </div>
-    <div id="testimage">
-      <img id="championimg" src="" alt="championsplashart">
-    </div>
-
     <script src="javascript/jquery-2.1.4.js"></script>
     <script src="javascript/API.js"></script>
   </body>
