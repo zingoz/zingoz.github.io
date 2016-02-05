@@ -2,14 +2,22 @@
 .col-centered{
     float: none;
     margin: auto;
-    margin-top: 1%;
+    padding-top: 1%;
 }
-#testing{
-  width: 300px;
-  float:left;
+html, body {
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
 }
-#chosenchamp,champtitle, champroles {
+#wrapper {
+  min-height: 100%;
+}
+
+#chosenchamp, #champtitle, #champroles {
   width: 100%;
+}
+p {
+  min-width: 120px;
 }
 #squareimg, #bigimg {
   vertical-align: top;
@@ -19,9 +27,16 @@
   padding: 0px;
   position: fixed;
   top: 1%;
+  left: 1%;
+  width: 98%;
+  top: 1%;
   margin: auto;
 }
+#testing, #testimage {
+  padding: 0px;
+}
 #ultest {
+  min-width: 200px;
    max-height:300px;
    overflow-y:auto;
    overflow-x:hidden;
