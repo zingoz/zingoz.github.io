@@ -23,6 +23,7 @@ window.onload=function(){                                   //loads when the sit
       for (var i = 0; i < allchampions.length; i++) {
         NewItem(allchampions[i].name,"ultest");
       }
+      finishedloading("Aatrox");
     });
       ul.addEventListener("click", function(wasclicked) {            //makes possible to detect what champion was clicked
         if (wasclicked.target.tagName === "LI"){
